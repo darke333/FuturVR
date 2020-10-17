@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 6864592978204195761}
   - component: {fileID: 588440523815015319}
   - component: {fileID: 2955518239957034828}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 2139967621190491147}
   - component: {fileID: 1520440953930086883}
   - component: {fileID: 8666717659243254541}
-  m_Layer: 5
+  m_Layer: 11
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,6 +371,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 92a3097fe66c8484bb98e2c982cd97d3, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92a3097fe66c8484bb98e2c982cd97d3, type: 3}
 --- !u!1 &9069216228778792373 stripped
@@ -393,6 +397,18 @@ PrefabInstance:
     - target: {fileID: 1825650066087308180, guid: a5c807023f6d17c4a9e53d014d24dc59, type: 3}
       propertyPath: m_Name
       value: Gates
+      objectReference: {fileID: 0}
+    - target: {fileID: 1825650066087308180, guid: a5c807023f6d17c4a9e53d014d24dc59, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874796451358765713, guid: a5c807023f6d17c4a9e53d014d24dc59, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874796451505156189, guid: a5c807023f6d17c4a9e53d014d24dc59, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7549156115119477290, guid: a5c807023f6d17c4a9e53d014d24dc59, type: 3}
       propertyPath: m_LocalPosition.x

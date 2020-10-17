@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: -4140859326625082523, guid: bc0f7a54e7c9c574ca0cda311e456d80, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: bc0f7a54e7c9c574ca0cda311e456d80, type: 3}
       propertyPath: m_Name
       value: UpPartBlock
@@ -66,6 +70,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: bc0f7a54e7c9c574ca0cda311e456d80, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: bc0f7a54e7c9c574ca0cda311e456d80, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc0f7a54e7c9c574ca0cda311e456d80, type: 3}

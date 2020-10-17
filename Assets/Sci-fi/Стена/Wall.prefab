@@ -57,11 +57,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9bcd8b82c4bba2747a7d4515150d7088, type: 2}
     - target: {fileID: -927199367670048503, guid: 1854bc041c88f304b81351e55aca354e, type: 3}
       propertyPath: m_Name
-      value: "\u0421\u0442\u0435\u043D\u0430"
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 1854bc041c88f304b81351e55aca354e, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1854bc041c88f304b81351e55aca354e, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1854bc041c88f304b81351e55aca354e, type: 3}

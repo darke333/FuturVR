@@ -57,11 +57,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: dc072271c121f0f45b883b8cdebb98ee, type: 2}
     - target: {fileID: -927199367670048503, guid: c448ca7e81cfac7419407fea8cde13b8, type: 3}
       propertyPath: m_Name
-      value: "\u0421\u0442\u0435\u043D\u0430 \u0443\u0433\u043E\u043B"
+      value: CornerWall
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: c448ca7e81cfac7419407fea8cde13b8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c448ca7e81cfac7419407fea8cde13b8, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c448ca7e81cfac7419407fea8cde13b8, type: 3}

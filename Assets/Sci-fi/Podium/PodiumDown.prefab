@@ -67,5 +67,9 @@ PrefabInstance:
       propertyPath: m_TagString
       value: normal
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 048d019b6d5c068459f01a1ae8c9ff2a, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048d019b6d5c068459f01a1ae8c9ff2a, type: 3}
