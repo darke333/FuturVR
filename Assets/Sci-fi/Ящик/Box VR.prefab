@@ -770,6 +770,8 @@ Transform:
   - {fileID: 5186432083842201030}
   - {fileID: 2127018369057222025}
   - {fileID: 6218906370903006741}
+  - {fileID: 521044080018882762}
+  - {fileID: 4175517509103903503}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2440,6 +2442,138 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7952703068124574030, guid: 24c90dd67cabae9408ce94dcb3718814, type: 3}
   m_PrefabInstance: {fileID: 4970739808905594931}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5148639736102206326
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 762655202433368621}
+    m_Modifications:
+    - target: {fileID: 9115795280331724901, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_Name
+      value: SiFi GunVR
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724901, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.644
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.282
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+--- !u!4 &4175517509103903503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9115795280331724921, guid: ac96277d59752624ca136254b3644bdc, type: 3}
+  m_PrefabInstance: {fileID: 5148639736102206326}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5858433732478576920
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 762655202433368621}
+    m_Modifications:
+    - target: {fileID: 6230247004687411664, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_Name
+      value: RifleVR
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411664, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.672
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.433
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.691
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+--- !u!4 &521044080018882762 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6230247004687411666, guid: cfd19bdc4fc22f8468f3b1235c64884b, type: 3}
+  m_PrefabInstance: {fileID: 5858433732478576920}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5886983868090990872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2494,6 +2628,10 @@ PrefabInstance:
     - target: {fileID: 576243899825455981, guid: 652d8a17e11ec3d4b9e3d6c017f45e89, type: 3}
       propertyPath: m_Name
       value: Sci-Fi SwordVR
+      objectReference: {fileID: 0}
+    - target: {fileID: 576243899825455981, guid: 652d8a17e11ec3d4b9e3d6c017f45e89, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7558129030043092791, guid: 652d8a17e11ec3d4b9e3d6c017f45e89, type: 3}
       propertyPath: m_Interpolate

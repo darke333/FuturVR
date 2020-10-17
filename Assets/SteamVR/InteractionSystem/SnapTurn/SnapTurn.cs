@@ -12,8 +12,6 @@ namespace Valve.VR.InteractionSystem
     {
         public float snapAngle = 90.0f;
 
-        public Transform TruePlayer;
-
         public bool showTurnAnimation = true;
 
         public AudioSource snapTurnSource;
@@ -130,7 +128,7 @@ namespace Valve.VR.InteractionSystem
 
             Vector3 playerFeetOffset = player.trackingOriginTransform.position - player.feetPositionGuess;
             player.trackingOriginTransform.position -= playerFeetOffset;
-            player.transform.Rotate(Vector3.up, angle); ////Here might be player
+            player.transform.Rotate(Vector3.up, angle);
             playerFeetOffset = Quaternion.Euler(0.0f, angle, 0.0f) * playerFeetOffset;
             player.trackingOriginTransform.position += playerFeetOffset;
 

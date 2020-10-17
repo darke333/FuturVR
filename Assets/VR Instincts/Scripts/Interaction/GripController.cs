@@ -17,7 +17,7 @@ public class GripController : MonoBehaviour
     private bool DomanantGrip;
 
     GameObject AssetHand;
-    GameObject SteamVRHand;
+    [SerializeField] GameObject SteamVRHand;
 
     void Start()
     {

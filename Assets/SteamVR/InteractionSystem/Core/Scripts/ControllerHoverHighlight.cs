@@ -29,14 +29,6 @@ namespace Valve.VR.InteractionSystem
         protected void OnHandInitialized(int deviceIndex)
         {
             GameObject renderModelGameObject = GameObject.Instantiate(hand.renderModelPrefab);
-            if (hand.handType == SteamVR_Input_Sources.LeftHand)
-            {
-                renderModelGameObject.tag = "HandModelLeft";
-            }
-            else
-            {
-                renderModelGameObject.tag = "HandModelRight";
-            }
             renderModelGameObject.transform.parent = this.transform;
             renderModelGameObject.transform.localPosition = Vector3.zero;
             renderModelGameObject.transform.localRotation = Quaternion.identity;
