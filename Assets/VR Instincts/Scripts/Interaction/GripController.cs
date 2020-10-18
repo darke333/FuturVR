@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
+using RootMotion.FinalIK;
+using Valve.VR.InteractionSystem;
 
 public class GripController : MonoBehaviour
 {
@@ -12,30 +14,49 @@ public class GripController : MonoBehaviour
     public SteamVR_Behaviour_Skeleton PreviewSkeleton;
     public Grabber grabber;
 
+    Valve.VR.InteractionSystem.Player player;
     private GameObject ConnectedObject;
     private Transform OffsetObject;
     private bool DomanantGrip;
 
     GameObject AssetHand;
-    [SerializeField] GameObject SteamVRHand;
-
+    GameObject SteamVRHand;
+    Transform ConnectPoint;
+    VRIK VRIK;
     void Start()
     {
-        Invoke("FindHands", 3);
+        Invoke("FindHands", 2);
+        //Valve.VR.InteractionSystem.Player.instance.rightHand.mainRenderModel.onControllerLoaded += MainRenderModel_onControllerLoaded1;
         
+
+    }
+
+    private void MainRenderModel_onControllerLoaded1()
+    {
+        throw new System.NotImplementedException();
     }
 
     void FindHands()
     {
-        AssetHand = HandSkeleton.gameObject;
+        VRIK = GameObject.FindObjectOfType<VRIK>();
+        //AssetHand = HandSkeleton.gameObject; ////
         if (Hand == SteamVR_Input_Sources.RightHand)
         {
             SteamVRHand = GameObject.FindGameObjectWithTag("HandModelRight");
+            //ConnectPoint = GameObject.FindGameObjectWithTag("HandRightConnectPoint").transform;
+
         }
         else
         {
             SteamVRHand = GameObject.FindGameObjectWithTag("HandModelLeft");
+            //ConnectPoint = GameObject.FindGameObjectWithTag("HandLeftConnectPoint").transform;
+
         }
+    }
+
+    private void MainRenderModel_onControllerLoaded()
+    {
+        print("left");
     }
 
     public void ChangeHands(bool IsAsetHands)

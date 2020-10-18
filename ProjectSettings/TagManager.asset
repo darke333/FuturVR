@@ -11,6 +11,8 @@ TagManager:
   - SoundManager
   - metal
   - normal
+  - HandLeftConnectPoint
+  - HandRightConnectPoint
   layers:
   - Default
   - TransparentFX
