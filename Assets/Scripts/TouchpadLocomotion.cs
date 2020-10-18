@@ -13,7 +13,7 @@ public class TouchpadLocomotion : MonoBehaviour
 
     [SerializeField] float CrouchHeightDifference = 0.3f;
     [SerializeField] float CrouchUpSpeed = 1;
-    public float CurrentCriuchHeight;
+    float CurrentCriuchHeight;
 
     public float jumpSpeed = 3;
     public float speed = 1;

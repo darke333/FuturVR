@@ -1651,6 +1651,7 @@ namespace Valve.VR.InteractionSystem
             int deviceIndex = trackedObject.GetDeviceIndex();
 
             mainRenderModel = renderModelInstance.GetComponent<RenderModel>();
+            
             renderModels.Add(mainRenderModel);
 
             if (hadOldRendermodel)

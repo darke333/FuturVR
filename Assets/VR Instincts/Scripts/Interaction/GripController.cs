@@ -18,25 +18,29 @@ public class GripController : MonoBehaviour
     private GameObject ConnectedObject;
     private Transform OffsetObject;
     private bool DomanantGrip;
-
-    GameObject AssetHand;
-    GameObject SteamVRHand;
-    Transform ConnectPoint;
+    [SerializeField] Hand hand;
+    //GameObject AssetHand;
+    //GameObject SteamVRHand;
+    //Transform ConnectPoint;
     VRIK VRIK;
     void Start()
     {
-        Invoke("FindHands", 2);
-        //Valve.VR.InteractionSystem.Player.instance.rightHand.mainRenderModel.onControllerLoaded += MainRenderModel_onControllerLoaded1;
-        
+        // Invoke("FindHands", 2);
+        if (!hand)
+        {
+            hand = GetComponent<Hand>();
+        }
+        VRIK = GameObject.FindObjectOfType<VRIK>();
+        //Valve.VR.InteractionSystem.Player.instance.rightHand.mainRenderModel.onControllerLoaded += MainRenderModel_onControllerLoaded1; ;
+
 
     }
 
-    private void MainRenderModel_onControllerLoaded1()
-    {
-        throw new System.NotImplementedException();
-    }
 
-    void FindHands()
+
+
+
+    /*void FindHands()
     {
         VRIK = GameObject.FindObjectOfType<VRIK>();
         //AssetHand = HandSkeleton.gameObject; ////
@@ -73,10 +77,28 @@ public class GripController : MonoBehaviour
         }
 
 
-    }
+    }*/
 
     private void Update()
     {
+        if (hand)
+        {
+            if (hand.mainRenderModel && !HandSkeleton)
+            {
+                //print("ready to take");
+                //HandSkeleton = hand.mainRenderModel.handPrefab.GetComponent<SteamVR_Behaviour_Skeleton>();\
+                HandSkeleton = hand.mainRenderModel.GetSkeleton();
+                if (Hand == SteamVR_Input_Sources.RightHand)
+                {
+                    VRIK.solver.rightArm.target = GameObject.FindGameObjectWithTag("HandRightConnectPoint").transform;
+                }
+                else
+                {
+                    VRIK.solver.leftArm.target = GameObject.FindGameObjectWithTag("HandLeftConnectPoint").transform;
+                }
+                //VRIK.solver.leftArm.target = null;
+            }
+        }
 
         if (ConnectedObject != null )
         {
@@ -142,6 +164,12 @@ public class GripController : MonoBehaviour
             }
         }
     }
+
+    private void MainRenderModel_onControllerLoaded()
+    {
+        throw new System.NotImplementedException();
+    }
+
     private void Grip()
     {
         GameObject NewObject = grabber.ClosestGrabbable();
@@ -152,7 +180,7 @@ public class GripController : MonoBehaviour
             ConnectedObject.GetComponent<Rigidbody>().useGravity = false;
 
             OffsetObject.GetComponent<GrabPoint>().Gripped = true;
-            ChangeHands(true);
+           // ChangeHands(true);///////////////
 
             if (ConnectedObject.GetComponent<Interactable>().gripped)
             {
@@ -188,7 +216,7 @@ public class GripController : MonoBehaviour
     }
     private void Release()
     {
-        ChangeHands(false);
+       // ChangeHands(false);//////////
 
         grabber.FixedJoint.connectedBody = null;
         grabber.StrongGrip.connectedBody = null;
