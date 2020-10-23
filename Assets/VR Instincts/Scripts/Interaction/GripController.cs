@@ -36,10 +36,6 @@ public class GripController : MonoBehaviour
 
     }
 
-
-
-
-
     /*void FindHands()
     {
         VRIK = GameObject.FindObjectOfType<VRIK>();

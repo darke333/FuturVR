@@ -1,75 +1,84 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using Valve.VR;
-
 
 public class SteamVRLocomotion : MonoBehaviour
 {
-    [SerializeField] float sensitivity = 0.1f;
-    [SerializeField] float MaxSpeed = 1;
+    private Vector2 trackpad;
+    private Vector3 moveDirection;
+    private int GroundCount;
+    private CapsuleCollider CapCollider;
 
-    [SerializeField] SteamVR_Action_Vector2 MoveValue;
-
-    float speed = 0;
-    CharacterController characterController;
-    Transform CameraRig;
-    //Transform Head;
-
-    private void Awake()
+    public SteamVR_Input_Sources MovementHand;//Set Hand To Get Input From
+    public SteamVR_Action_Vector2 TrackpadAction;
+    public SteamVR_Action_Boolean JumpAction;
+    public float jumpHeight;
+    public float MovementSpeed;
+    public float Deadzone;//the Deadzone of the trackpad. used to prevent unwanted walking.
+    public GameObject Head;
+    public GameObject AxisHand;//Hand Controller GameObject
+    public PhysicMaterial NoFrictionMaterial;
+    public PhysicMaterial FrictionMaterial;
+    private void Start()
     {
-
+        CapCollider = GetComponent<CapsuleCollider>();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        characterController = GetComponent<CharacterController>();
-        CameraRig = Valve.VR.InteractionSystem.Player.instance.hmdTransform;
-        //Head = SteamVR_Render.Top().;
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        HandleHead();
-        HandleHeight();
-        CalculateMovement();
+        updateInput();
+        updateCollider();
+        moveDirection = Quaternion.AngleAxis(Angle(trackpad) + AxisHand.transform.localRotation.eulerAngles.y, Vector3.up) * Vector3.forward;//get the angle of the touch and correct it for the rotation of the controller
+        Rigidbody RBody = GetComponent<Rigidbody>();
+        Vector3 velocity = new Vector3(0, 0, 0);
+        if (trackpad.magnitude > Deadzone)
+        {//make sure the touch isn't in the deadzone and we aren't going to fast.
+            CapCollider.material = NoFrictionMaterial;
+            velocity = moveDirection;
+            if (JumpAction.GetStateDown(MovementHand) && GroundCount > 0)
+            {
+                float jumpSpeed = Mathf.Sqrt(2 * jumpHeight * 9.81f);
+                RBody.AddForce(0, jumpSpeed, 0, ForceMode.VelocityChange);
+            }
+            RBody.AddForce(velocity.x * MovementSpeed - RBody.velocity.x, 0, velocity.z * MovementSpeed - RBody.velocity.z, ForceMode.VelocityChange);
+
+            Debug.Log("Velocity" + velocity);
+            Debug.Log("Movement Direction:" + moveDirection);
+        }
+        else if (GroundCount > 0)
+        {
+            CapCollider.material = FrictionMaterial;
+        }
     }
 
-    void HandleHead()
+    public static float Angle(Vector2 p_vector2)
     {
-        //Store Current
-        Vector3 oldPosition = CameraRig.position;
-        Quaternion oldRotation = CameraRig.rotation;
-
-        // Rotation
-        //transform.eulerAngles = new Vector3(0, Head.rotation.eulerAngles.y, 0);
-
-        // Restore
-        CameraRig.position = oldPosition;
-        CameraRig.rotation = oldRotation;
+        if (p_vector2.x < 0)
+        {
+            return 360 - (Mathf.Atan2(p_vector2.x, p_vector2.y) * Mathf.Rad2Deg * -1);
+        }
+        else
+        {
+            return Mathf.Atan2(p_vector2.x, p_vector2.y) * Mathf.Rad2Deg;
+        }
     }
 
-    void CalculateMovement()
+    private void updateCollider()
     {
-        Vector3 orientationEuler = new Vector3(0, transform.eulerAngles.y, 0);
-        Quaternion orientation = Quaternion.Euler(orientationEuler);
-        Vector3 movement = Vector3.zero;
-
-        speed += MoveValue.axis.y * sensitivity;
-        speed = Mathf.Clamp(speed, -MaxSpeed, MaxSpeed);
-
-        movement += orientation * (speed * Vector3.forward) * Time.deltaTime;
-        print(movement);
-        characterController.Move(movement);
+        CapCollider.height = Head.transform.localPosition.y;
+        CapCollider.center = new Vector3(Head.transform.localPosition.x, Head.transform.localPosition.y / 2, Head.transform.localPosition.z);
     }
 
-    void HandleHeight()
+    private void updateInput()
     {
-        // Get the head in local space
-        //float headHeight = Mathf.Clamp(Head.localPosition.y, 1, 2);
-        //characterController.height = Head.localPosition.y;
+        trackpad = TrackpadAction.GetAxis(MovementHand);
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        GroundCount++;
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        GroundCount--;
+    }
 }
