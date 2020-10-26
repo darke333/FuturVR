@@ -100,13 +100,25 @@ public class GripController : MonoBehaviour
         {
             if (DomanantGrip || !ConnectedObject.GetComponent<Interactable>().SecondGripped)
             {
-                if (ConnectedObject.GetComponent<Interactable>().touchCount == 0 && !ConnectedObject.GetComponent<Interactable>().SecondGripped)
+                if (ConnectedObject.GetComponent<Interactable>().touchCount == 0 &&  !ConnectedObject.GetComponent<Interactable>().SecondGripped)
                 {
                     grabber.FixedJoint.connectedBody = null;
                     grabber.StrongGrip.connectedBody = null;
 
                     ConnectedObject.transform.position = Vector3.MoveTowards(ConnectedObject.transform.position, transform.position - ConnectedObject.transform.rotation * OffsetObject.GetComponent<GrabPoint>().Offset, .25f);
                     ConnectedObject.transform.rotation = Quaternion.RotateTowards(ConnectedObject.transform.rotation, transform.rotation*Quaternion.Inverse( OffsetObject.GetComponent<GrabPoint>().RotationOffset), 100);
+
+                    //ConnectedObject.transform.position = transform.position - ConnectedObject.transform.rotation * OffsetObject.GetComponent<GrabPoint>().Offset;
+                    //ConnectedObject.transform.rotation = transform.rotation * Quaternion.Inverse(OffsetObject.GetComponent<GrabPoint>().RotationOffset);
+
+                    /*
+                    SteamVR_Skeleton_PoseSnapshot pose = grabber.ClosestGrabbable().GetComponent<SteamVR_Skeleton_Poser>().GetBlendedPose(GetComponent<Hand>().skeleton);
+
+                    //snap the object to the center of the attach point
+                    ConnectedObject.transform.position = transform.TransformPoint(pose.position);
+                    ConnectedObject.transform.rotation = transform.rotation * pose.rotation;
+                    */
+
                     grabber.FixedJoint.connectedBody = ConnectedObject.GetComponent<Rigidbody>();
                 }
                 else if (ConnectedObject.GetComponent<Interactable>().touchCount > 0|| ConnectedObject.GetComponent<Interactable>().SecondGripped)
@@ -161,10 +173,7 @@ public class GripController : MonoBehaviour
         }
     }
 
-    private void MainRenderModel_onControllerLoaded()
-    {
-        throw new System.NotImplementedException();
-    }
+
 
     private void Grip()
     {
@@ -198,6 +207,20 @@ public class GripController : MonoBehaviour
                 if (!OffsetObject.GetComponent<GrabPoint>().HelperGrip)
                 {
                     DomanantGrip = true;
+                    /*
+                    SteamVR_Skeleton_PoseSnapshot pose = grabber.ClosestGrabbable().GetComponent<SteamVR_Skeleton_Poser>().GetBlendedPose(GetComponent<Hand>().skeleton);
+
+                    //snap the object to the center of the attach point
+                    ConnectedObject.transform.position = transform.TransformPoint(pose.position);
+                    ConnectedObject.transform.rotation = transform.rotation * pose.rotation;
+                    */
+
+                    //ConnectedObject.transform.position = Vector3.MoveTowards(ConnectedObject.transform.position, transform.position - ConnectedObject.transform.rotation * OffsetObject.GetComponent<GrabPoint>().Offset, 1);
+                    //ConnectedObject.transform.rotation = Quaternion.RotateTowards(ConnectedObject.transform.rotation, transform.rotation * Quaternion.Inverse(OffsetObject.GetComponent<GrabPoint>().RotationOffset), 100);
+
+                    ConnectedObject.transform.position = transform.position - ConnectedObject.transform.rotation * OffsetObject.GetComponent<GrabPoint>().Offset;
+                    ConnectedObject.transform.rotation = transform.rotation * Quaternion.Inverse(OffsetObject.GetComponent<GrabPoint>().RotationOffset);
+
                     ConnectedObject.GetComponent<Interactable>().GrippedBy = transform.parent.gameObject;
                 }
             }
@@ -217,8 +240,9 @@ public class GripController : MonoBehaviour
         grabber.FixedJoint.connectedBody = null;
         grabber.StrongGrip.connectedBody = null;
         grabber.WeakGrip.connectedBody = null;
-        ConnectedObject.GetComponent<Rigidbody>().velocity = position.GetVelocity(Hand) + transform.parent.GetComponent<Rigidbody>().velocity;
-        ConnectedObject.GetComponent<Rigidbody>().angularVelocity = position.GetAngularVelocity(Hand) + transform.parent.GetComponent<Rigidbody>().angularVelocity;
+        
+        ConnectedObject.GetComponent<Rigidbody>().velocity = position.GetVelocity(Hand);// + transform.parent.GetComponent<Rigidbody>().velocity;
+        ConnectedObject.GetComponent<Rigidbody>().angularVelocity = position.GetAngularVelocity(Hand);//+ transform.parent.GetComponent<Rigidbody>().angularVelocity;
         ConnectedObject.GetComponent<Rigidbody>().useGravity = true;
         if (!ConnectedObject.GetComponent<Interactable>().SecondGripped)
         {
