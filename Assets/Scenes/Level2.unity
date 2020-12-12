@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: acf636bcdb0f5234ebe15af0c37236af, type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 4890085278179872738, guid: f621b8c63975f6c41a28c1dfb6f320d3, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -192,6 +192,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (22)
@@ -254,6 +258,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (1)
@@ -316,6 +324,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (25)
@@ -472,6 +484,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (10)
@@ -651,6 +667,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
   m_PrefabInstance: {fileID: 23852306}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &26512401
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 26512402}
+  - component: {fileID: 26512403}
+  m_Layer: 0
+  m_Name: Reflection Probe (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &26512402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26512401}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1156625509}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &26512403
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26512401}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 15, y: 20, z: 15}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
 --- !u!1001 &33821266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -658,6 +738,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (17)
@@ -750,7 +834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -844,6 +928,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (6)
@@ -906,6 +994,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (26)
@@ -1581,6 +1673,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8379092944090145239, guid: 3b8f0583af316f34e9aac24641d6e707, type: 3}
   m_PrefabInstance: {fileID: 65715643}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &68649625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68649626}
+  - component: {fileID: 68649627}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &68649626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68649625}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 675308256}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &68649627
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68649625}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 20, y: 5.8487225, z: 20.479206}
+  m_BoxOffset: {x: 0, y: 2.2688894, z: 0.03993416}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
 --- !u!1001 &73469140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1588,6 +1744,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (20)
@@ -1775,6 +1935,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight
@@ -1837,6 +2001,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (9)
@@ -2067,6 +2235,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1863192460924592987, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4381482391059034174, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_Name
       value: Box VR (1)
@@ -2271,6 +2443,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (26)
@@ -2333,6 +2509,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (6)
@@ -2395,6 +2575,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (15)
@@ -2581,6 +2765,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (9)
@@ -2705,6 +2893,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (9)
@@ -2767,6 +2959,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (12)
@@ -3015,6 +3211,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (2)
@@ -3561,6 +3761,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (12)
@@ -3958,6 +4162,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1978544672538638556, guid: 3d567960bd4fe0f4594d7e42d681de5d, type: 3}
   m_PrefabInstance: {fileID: 198479833}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &201782482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 201782483}
+  - component: {fileID: 201782484}
+  m_Layer: 0
+  m_Name: Reflection Probe (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &201782483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201782482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 360371419}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &201782484
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201782482}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 7, y: 20, z: 10}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
 --- !u!1001 &206341142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3965,6 +4233,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (25)
@@ -4089,6 +4361,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (31)
@@ -4313,6 +4589,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (20)
@@ -4499,6 +4779,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (7)
@@ -4685,6 +4969,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (10)
@@ -5119,6 +5407,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (10)
@@ -5597,6 +5889,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (6)
@@ -5747,6 +6043,7 @@ Transform:
   - {fileID: 829223138}
   - {fileID: 613376853}
   - {fileID: 745190125}
+  - {fileID: 1593951215}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
@@ -5853,7 +6150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3917388439794044102, guid: a9fb777c553204c42a317d78e1226026, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3917388439794044102, guid: a9fb777c553204c42a317d78e1226026, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5881,6 +6178,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (12)
@@ -5943,6 +6244,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (13)
@@ -6160,6 +6465,10 @@ PrefabInstance:
     - target: {fileID: 762655202433368621, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863192460924592987, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4381482391059034174, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_Name
@@ -6799,6 +7108,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (7)
@@ -7003,6 +7316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box VR (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6509160728803673752, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
 --- !u!4 &341964073 stripped
@@ -7079,6 +7396,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (4)
@@ -7412,6 +7733,7 @@ Transform:
   - {fileID: 340817322}
   - {fileID: 390724462}
   - {fileID: 636868120}
+  - {fileID: 201782483}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -8074,6 +8396,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (6)
@@ -8578,6 +8904,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (12)
@@ -9044,6 +9374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (7)
@@ -9168,6 +9502,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (11)
@@ -9230,6 +9568,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (34)
@@ -9501,6 +9843,7 @@ Transform:
   - {fileID: 425132100}
   - {fileID: 1255025299}
   - {fileID: 1469916236}
+  - {fileID: 1404333781}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -9511,6 +9854,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (8)
@@ -9883,6 +10230,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (12)
@@ -10503,6 +10854,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (1)
@@ -11022,6 +11377,7 @@ Transform:
   - {fileID: 80974914}
   - {fileID: 2049878230}
   - {fileID: 257972070}
+  - {fileID: 1635153300}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11094,6 +11450,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (1)
@@ -11222,6 +11582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (2)
@@ -11665,6 +12029,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (2)
@@ -11844,6 +12212,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1978544672538638556, guid: 3d567960bd4fe0f4594d7e42d681de5d, type: 3}
   m_PrefabInstance: {fileID: 543046044}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &546174330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546174331}
+  - component: {fileID: 546174332}
+  m_Layer: 0
+  m_Name: Reflection Probe (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &546174331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546174330}
+  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000029504295}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1367471087}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &546174332
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546174330}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 20, y: 20, z: 20}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
 --- !u!1001 &553581796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11851,6 +12283,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (23)
@@ -12223,6 +12659,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (28)
@@ -12693,6 +13133,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (24)
@@ -12879,6 +13323,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (13)
@@ -13402,6 +13850,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (23)
@@ -13650,6 +14102,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (25)
@@ -13880,6 +14336,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (7)
@@ -14314,6 +14774,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (21)
@@ -14562,6 +15026,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (2)
@@ -14714,6 +15182,7 @@ Transform:
   - {fileID: 1727131430}
   - {fileID: 406186676}
   - {fileID: 1378415968}
+  - {fileID: 68649626}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14724,6 +15193,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (17)
@@ -14848,6 +15321,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (8)
@@ -14910,6 +15387,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (11)
@@ -14972,6 +15453,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (6)
@@ -15034,6 +15519,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight
@@ -15220,6 +15709,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (10)
@@ -15592,6 +16085,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (14)
@@ -15654,6 +16151,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (19)
@@ -15888,6 +16389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box VR (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6218906370902704757, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
 --- !u!4 &733799771 stripped
@@ -15902,6 +16407,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (10)
@@ -16011,6 +16520,10 @@ PrefabInstance:
     - target: {fileID: 4381482391059034174, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_Name
       value: Box VR
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218906370902704757, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
@@ -16132,9 +16645,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4341868464511217066, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4381482391059034174, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_Name
       value: Box VR (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6218906370902704757, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
@@ -16375,6 +16896,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (29)
@@ -16561,6 +17086,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (27)
@@ -16623,6 +17152,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (25)
@@ -16747,6 +17280,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (19)
@@ -16995,6 +17532,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (7)
@@ -17305,6 +17846,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (12)
@@ -17429,6 +17974,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (5)
@@ -18111,6 +18660,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (4)
@@ -18173,6 +18726,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (9)
@@ -18562,6 +19119,10 @@ PrefabInstance:
     - target: {fileID: 4381482391059034174, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_Name
       value: Box VR (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509160728803673752, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
@@ -19259,6 +19820,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (22)
@@ -19879,6 +20444,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (15)
@@ -19941,6 +20510,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (9)
@@ -20065,6 +20638,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (13)
@@ -20127,6 +20704,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (35)
@@ -20189,6 +20770,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (11)
@@ -20251,6 +20836,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (15)
@@ -20313,6 +20902,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (8)
@@ -20561,6 +21154,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (5)
@@ -20747,6 +21344,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (33)
@@ -22115,6 +22716,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (3)
@@ -22769,6 +23374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (22)
@@ -22955,6 +23564,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (3)
@@ -23171,7 +23784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -23327,6 +23940,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (13)
@@ -23389,6 +24006,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (13)
@@ -23451,6 +24072,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (10)
@@ -23513,6 +24138,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (3)
@@ -23637,6 +24266,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (2)
@@ -24009,6 +24642,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (23)
@@ -24443,6 +25080,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (8)
@@ -24672,6 +25313,10 @@ PrefabInstance:
     - target: {fileID: 762655202433368621, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863192460924592987, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4381482391059034174, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_Name
@@ -24909,6 +25554,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight
@@ -25229,7 +25878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -25323,6 +25972,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (6)
@@ -25385,6 +26038,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (8)
@@ -26005,6 +26662,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (24)
@@ -26159,7 +26820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -26548,6 +27209,7 @@ Transform:
   - {fileID: 1772481898}
   - {fileID: 79060701}
   - {fileID: 1214456617}
+  - {fileID: 26512402}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26558,6 +27220,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (2)
@@ -26682,6 +27348,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (2)
@@ -27279,6 +27949,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (12)
@@ -27341,6 +28015,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (11)
@@ -27403,6 +28081,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (3)
@@ -27589,6 +28271,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (5)
@@ -27876,6 +28562,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (2)
@@ -28310,6 +29000,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (4)
@@ -28372,6 +29066,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (17)
@@ -28434,6 +29132,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (26)
@@ -28496,6 +29198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (18)
@@ -28844,6 +29550,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight
@@ -28906,6 +29616,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (8)
@@ -29255,6 +29969,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (6)
@@ -29536,6 +30254,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (3)
@@ -29598,6 +30320,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (24)
@@ -29908,6 +30634,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (24)
@@ -30032,6 +30762,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (31)
@@ -30199,6 +30933,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (11)
@@ -30936,6 +31674,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1978544672538638556, guid: 3d567960bd4fe0f4594d7e42d681de5d, type: 3}
   m_PrefabInstance: {fileID: 1359822088}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1361150566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1361150567}
+  - component: {fileID: 1361150568}
+  m_Layer: 0
+  m_Name: Reflection Probe (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1361150567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361150566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1408067510}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &1361150568
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361150566}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 10, y: 20, z: 7}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
 --- !u!1001 &1361806905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31033,6 +31835,7 @@ Transform:
   - {fileID: 1322762047}
   - {fileID: 1823650061}
   - {fileID: 2034391592}
+  - {fileID: 546174331}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31141,6 +31944,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight
@@ -31359,6 +32166,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight
@@ -31607,6 +32418,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1388768756}
     m_Modifications:
+    - target: {fileID: 722967038, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 828118896, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832692943, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464562199, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531472928, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1596161485940237008, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
       propertyPath: m_Name
       value: LightBlock (1)
@@ -31662,6 +32493,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2341288733455044803, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
   m_PrefabInstance: {fileID: 1402412403}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1404333780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1404333781}
+  - component: {fileID: 1404333782}
+  m_Layer: 0
+  m_Name: Reflection Probe (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1404333781
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404333780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 466345724}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &1404333782
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404333780}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 7, y: 20, z: 10}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
 --- !u!1001 &1405300721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31878,6 +32773,7 @@ Transform:
   - {fileID: 1670649511}
   - {fileID: 215011598}
   - {fileID: 1144410870}
+  - {fileID: 1361150567}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -32264,6 +33160,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (20)
@@ -32326,6 +33226,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (16)
@@ -32388,6 +33292,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (4)
@@ -32450,6 +33358,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (33)
@@ -33052,6 +33964,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (5)
@@ -33194,7 +34110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2684535646408387473, guid: 70b132b2e771aa84ca2dcd4a83bf3ae0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.5
+      value: 2.125
       objectReference: {fileID: 0}
     - target: {fileID: 2684535646408387473, guid: 70b132b2e771aa84ca2dcd4a83bf3ae0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -33428,6 +34344,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (4)
@@ -33800,6 +34720,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (1)
@@ -34110,6 +35034,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (22)
@@ -34234,6 +35162,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (5)
@@ -34368,7 +35300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5796883763973998492, guid: db2f80b74c562e743b354710e2e8dd6f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5796883763973998492, guid: db2f80b74c562e743b354710e2e8dd6f, type: 3}
       propertyPath: m_LocalRotation.x
@@ -34388,7 +35320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5796883763973998492, guid: db2f80b74c562e743b354710e2e8dd6f, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5796883763973998492, guid: db2f80b74c562e743b354710e2e8dd6f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -34420,6 +35352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (7)
@@ -34606,6 +35542,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (21)
@@ -34730,6 +35670,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (28)
@@ -34947,6 +35891,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (18)
@@ -35195,6 +36143,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (1)
@@ -35374,6 +36326,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1978544672538638556, guid: 3d567960bd4fe0f4594d7e42d681de5d, type: 3}
   m_PrefabInstance: {fileID: 1593548655}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1593951214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1593951215}
+  - component: {fileID: 1593951216}
+  m_Layer: 0
+  m_Name: Reflection Probe (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1593951215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593951214}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.000002905726}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 277488525}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &1593951216
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593951214}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 15, y: 20, z: 15}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
 --- !u!1001 &1594607964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35505,6 +36521,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (4)
@@ -35567,6 +36587,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 533059804}
     m_Modifications:
+    - target: {fileID: 722967038, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 828118896, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832692943, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464562199, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531472928, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1596161485940237008, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
       propertyPath: m_Name
       value: LightBlock (1)
@@ -35629,6 +36669,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (21)
@@ -35691,6 +36735,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (4)
@@ -35939,6 +36987,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (16)
@@ -36249,6 +37301,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (18)
@@ -36796,6 +37852,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8379092944090145239, guid: 3b8f0583af316f34e9aac24641d6e707, type: 3}
   m_PrefabInstance: {fileID: 1634571054}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1635153299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1635153300}
+  - component: {fileID: 1635153301}
+  m_Layer: 0
+  m_Name: Reflection Probe (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1635153300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635153299}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 515381844}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &1635153301
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635153299}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 10, y: 20, z: 7}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
 --- !u!1001 &1635361841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36951,6 +38071,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (16)
@@ -37323,6 +38447,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (13)
@@ -37971,6 +39099,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (32)
@@ -38095,6 +39227,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (10)
@@ -38281,6 +39417,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (11)
@@ -38343,6 +39483,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (1)
@@ -38780,9 +39924,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1863192460924592987, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4381482391059034174, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_Name
       value: Box VR (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509160728803673752, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
@@ -38798,6 +39950,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (9)
@@ -38903,6 +40059,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (11)
@@ -39275,6 +40435,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (30)
@@ -39461,6 +40625,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (14)
@@ -39585,6 +40753,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1388768756}
     m_Modifications:
+    - target: {fileID: 722967038, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 828118896, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832692943, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464562199, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531472928, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1596161485940237008, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
       propertyPath: m_Name
       value: LightBlock
@@ -39721,6 +40909,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (9)
@@ -39783,6 +40975,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (16)
@@ -40093,6 +41289,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (3)
@@ -41025,7 +42225,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7050578205014643148, guid: 0173a313bdc6a2042be3a26866e0ac4e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4103374
+      value: -2.31
       objectReference: {fileID: 0}
     - target: {fileID: 7050578205014643148, guid: 0173a313bdc6a2042be3a26866e0ac4e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -41296,7 +42496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -41328,6 +42528,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 533059804}
     m_Modifications:
+    - target: {fileID: 722967038, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 828118896, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 832692943, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464562199, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531472928, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1596161485940237008, guid: 986b968005c00ac4d857a63cde0ebc0a, type: 3}
       propertyPath: m_Name
       value: LightBlock
@@ -41922,6 +43142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (35)
@@ -41984,6 +43208,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight
@@ -42046,6 +43274,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (8)
@@ -42170,6 +43402,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (34)
@@ -42728,6 +43964,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (6)
@@ -42790,6 +44030,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (27)
@@ -42852,6 +44096,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (13)
@@ -43038,6 +44286,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (1)
@@ -43256,6 +44508,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (27)
@@ -43504,6 +44760,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (1)
@@ -43818,6 +45078,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (14)
@@ -43972,7 +45236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -44004,6 +45268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (18)
@@ -44128,6 +45396,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (20)
@@ -44252,6 +45524,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (5)
@@ -44314,6 +45590,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (19)
@@ -44376,6 +45656,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (23)
@@ -44438,6 +45722,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (27)
@@ -44500,6 +45788,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (3)
@@ -44686,6 +45978,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (12)
@@ -45058,6 +46354,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (30)
@@ -45368,6 +46668,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 636868120}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (9)
@@ -45430,6 +46734,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1144410870}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (7)
@@ -45616,6 +46924,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (14)
@@ -45678,6 +46990,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (17)
@@ -46652,6 +47968,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (11)
@@ -46776,6 +48096,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (26)
@@ -47148,6 +48472,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (32)
@@ -47210,6 +48538,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (21)
@@ -47334,6 +48666,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (29)
@@ -47396,6 +48732,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (3)
@@ -47582,6 +48922,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (7)
@@ -47768,6 +49112,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (4)
@@ -47830,6 +49178,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673910796}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (19)
@@ -47892,6 +49244,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (10)
@@ -47954,6 +49310,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523681383}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (5)
@@ -48016,6 +49376,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 257972070}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (5)
@@ -48150,7 +49514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.75
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -48170,7 +49534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2101528917355409898, guid: 36e5c7e1e63c3274d84d1b2ecf49b75b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -48245,6 +49609,10 @@ PrefabInstance:
     - target: {fileID: 762655202433368621, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863192460924592987, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4381482391059034174, guid: 96cf1f762d83d2841a4ac79f10997a46, type: 3}
       propertyPath: m_Name
@@ -48760,6 +50128,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (15)
@@ -48822,6 +50194,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 617288875}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight
@@ -48946,6 +50322,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1416044176}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (13)
@@ -49008,6 +50388,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1469916236}
     m_Modifications:
+    - target: {fileID: 243039958, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1334928276628737235, guid: f9ba7e5cf17cc6e43afdbd6c9d2d6c72, type: 3}
       propertyPath: m_Name
       value: SeelingLight (8)
